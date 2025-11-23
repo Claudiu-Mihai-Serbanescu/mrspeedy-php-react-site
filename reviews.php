@@ -2,8 +2,8 @@
 header('Content-Type: application/json; charset=utf-8');
 
 // === CONFIG ===
-$apiKey  = 'AIzaSyCzC7fPEbZHkV3g8TrF7AV3xWkwCsCM5Mw';
-$placeId = 'ChIJy3ZPTcalcEgRte4zbsAJ6cY';
+$apiKey  = '';
+$placeId = '';
 
 // === CACHE (opțional, recomandat) ===
 $cacheFile = __DIR__ . '/cache/google_reviews.json';
