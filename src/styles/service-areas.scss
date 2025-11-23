@@ -1,0 +1,16 @@
+/* === Titlu + descriere pentru Service Areas === */
+.serviceAreasTitle{
+    h2{
+      font-size:2rem; font-weight:700; color:#473d3a; margin-bottom:15px;
+      &:hover{ color:#39312f; transition: color .3s ease }
+    }
+    p{
+      font-size:1.1rem; font-weight:400; color:#5a5a5a; line-height:1.6;
+      max-width:900px; margin:0 auto 15px;
+      &:hover{ color:#39312f; transition: color .3s ease }
+      strong{ color:#ff5821; font-weight:700 }
+      .highlight{ color:#473d3a; font-weight:700; text-decoration:underline }
+    }
+    &.m-3{ margin-top:20px; margin-bottom:20px }
+  }
+  

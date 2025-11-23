@@ -1,0 +1,94 @@
+@use "./styles/variables" as *;
+@use "./styles/base" as *;
+@use "./styles/utilities" as *;
+@use "./styles/helpers" as *;
+
+@use "./styles/header" as *;
+@use "./styles/masthead" as *;
+@use "./styles/trustbar" as *;
+@use "./styles/reviews" as *;
+@use "./styles/areas-table" as *;
+@use "./styles/tables" as *;
+@use "./styles/discount" as *;
+@use "./styles/timeline" as *;
+@use "./styles/floating-cta" as *;
+@use "./styles/components" as *;
+@use "./styles/locations" as *;
+@use "./styles/service-areas" as *;
+@use "./styles/forms" as *;
+@use "./styles/contact" as *;
+@use "./styles/breadcrumb" as *;
+@use "./styles/accordion" as *;
+@use "./styles/home" as *;
+@use "./styles/footer" as *;
+
+@use "./styles/modern-service" as *;
+@use "./styles/blog" as *;
+@use "./styles/contact-hero" as *;
+@use "./styles/_emergency-intro" as *;
+@use "./styles/_locations" as *;
+/* =========================
+   Global overrides & helpers
+========================= */
+
+.link-warning,
+.text-warning a,
+.page-section-table a,
+.locations-list a,
+.review-card a,
+.text-index a {
+  color: #3a0c8a;
+  text-decoration: none !important;
+}
+.link-warning:hover,
+.text-warning a:hover,
+.page-section-table a:hover,
+.locations-list a:hover,
+.review-card a:hover {
+  color: #5b2fb3 !important;
+}
+
+.ms-card,
+.review-card,
+.biz-card {
+  border-radius: 14px;
+}
+
+.ms-img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ms-footer {
+  background: #f8f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ms-float-whatsapp,
+.ms-float-call {
+  position: fixed;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+  text-decoration: none !important;
+
+  .text-label {
+    font-weight: 600;
+  }
+}
+.ms-float-whatsapp {
+  bottom: 96px;
+  background: #e7f7ef;
+  color: #128c7e;
+}
+.ms-float-call {
+  bottom: 40px;
+  background: #eaf0ff;
+  color: #2244aa;
+}

@@ -1,0 +1,147 @@
+/* ===== Google Reviews / Testimonials ===== */
+#google-reviews {
+  padding-block: 3rem;
+  background: #f8f9fa;
+
+  /* --- Business card --- */
+  .biz-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+  }
+  .biz-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+  }
+  .biz-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+  }
+  .biz-rating-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f57c00;
+    margin: 0;
+  }
+  .biz-stars {
+    color: #fdd663;
+    font-size: 1.15rem;
+    line-height: 1;
+    margin: 0.25rem 0 0.45rem;
+  }
+  .biz-count {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  .google-badge {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.2rem;
+  }
+  .btn-review {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-top: 0.9rem;
+  }
+
+  /* --- Review cards --- */
+  .review-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem 1.75rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9rem;
+  }
+  .review-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.9rem;
+    background: #eee;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .review-name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .review-stars {
+    color: #fdd663;
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .review-text {
+    flex: 1;
+    font-size: 0.97rem;
+    color: #333;
+    margin: 0.9rem 0;
+    white-space: pre-wrap;
+  }
+  .review-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+  .read-more {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  /* --- Swiper --- */
+  .swiper {
+    padding-bottom: 2.5rem;
+  }
+  .swiper-pagination {
+    display: none !important;
+  } /* ascundem punctele */
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 28px;
+    height: 28px;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    color: var(--accent);
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+/* fallback dacă nu avem deja utilitara */
+.d-none {
+  display: none !important;
+}

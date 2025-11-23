@@ -1,0 +1,90 @@
+.service-item {
+  margin-top: 20px;
+}
+.service-item p {
+  font-weight: 700;
+}
+.service-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #fed136; /* poți schimba în var(--warning) dacă vrei */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .service-item {
+    margin-bottom: 30px;
+  }
+}
+/* ===== Home hero: fonturi mai mici pe mobil + butoane centrate ===== */
+.home-hero {
+  /* h1 și lead scalabile (și pe desktop rămân la dimensiunile tale actuale) */
+  .contact-hero__panel h1 {
+    /* distribuie mai bine rândurile pe mobil */
+    text-wrap: balance;
+    /* scalare fluidă: între ~28px și ~36px în funcție de lățime */
+    font-size: clamp(1.75rem, 4.5vw + 0.25rem, 2.25rem);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-hero__panel .lead {
+    /* între ~15px și ~18px */
+    font-size: clamp(0.95rem, 1.2vw + 0.7rem, 1.125rem);
+    line-height: 1.55;
+    margin-bottom: 0.85rem;
+  }
+
+  /* chips puțin mai compacte */
+  .contact-hero__chips li {
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 0.95rem);
+    padding: 0.35rem 0.6rem;
+  }
+
+  /* Pe ecrane mici: centrează tot și compactează butoanele */
+  @media (max-width: 767.98px) {
+    text-align: center;
+
+    .contact-hero__panel {
+      padding: 16px 16px 18px;
+      margin-inline: auto;
+    }
+
+    .contact-hero__chips {
+      justify-content: center;
+    }
+
+    /* butoanele din rândul existent (nu schimb HTML-ul) */
+    .contact-hero__panel > .d-flex {
+      justify-content: center; /* centrează rândul */
+      gap: 0.5rem; /* un pic mai compact pe mobil */
+    }
+
+    .contact-hero__panel .btn {
+      /* dimensiuni mai „light” față de .btn-lg, dar păstrează vizibilitatea */
+      padding: 0.55rem 0.9rem;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .home-hero__trust {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  /* foarte mici (sub 360px) – încă un pas de compactare */
+  @media (max-width: 359.98px) {
+    .contact-hero__panel h1 {
+      font-size: 1.6rem;
+    }
+    .contact-hero__panel .btn {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.95rem;
+    }
+    .contact-hero__chips li {
+      font-size: 0.8rem;
+    }
+  }
+}

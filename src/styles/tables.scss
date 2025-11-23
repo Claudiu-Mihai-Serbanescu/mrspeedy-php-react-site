@@ -1,0 +1,20 @@
+/* === Stilizare tabel generic + scroll === */
+.scrollable-table{ max-height:400px; overflow-y:scroll }
+
+.table th, .table td{ white-space:nowrap }
+#searchInput{ margin-bottom:15px }
+
+/* efecte hover */
+.table tr{
+  transition: all .3s ease;
+  cursor:pointer;
+}
+.table tr:hover{
+  box-shadow:0 4px 15px rgba(0,0,0,.2);
+  background-color:#FED136;
+}
+.table tr:hover td,
+.table tr:hover th{
+  color:black;
+  font-weight:bolder;
+}

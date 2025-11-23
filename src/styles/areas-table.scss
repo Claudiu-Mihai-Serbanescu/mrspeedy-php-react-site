@@ -1,0 +1,11 @@
+/* === Section: Areas table (scrollable) === */
+.page-section-table{ padding:4rem 0 }
+.page-section-table h2.section-heading,
+.page-section-table .section-heading.h2{ font-size:1.5rem; margin:0 0 1rem }
+.page-section-table h3.section-subheading,
+.page-section-table .section-subheading.h3{
+  font-size:1rem; font-weight:400; font-style:italic;
+  font-family:"Roboto Slab", "Segoe UI", Roboto, Arial, sans-serif;
+  margin-bottom:1rem;
+}
+@media (min-width:768px){ .page-section-table{ padding:4rem 0 } }

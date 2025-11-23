@@ -1,0 +1,5 @@
+<div id="fire-doors-services" class="container  ">
+    <h2>Fire Doors Services</h2>
+    <p>Our Fire Doors Services are designed to provide both safety and style for your property, whether it's residential or commercial. Fire doors are a critical component in protecting against the spread of fire, ensuring safe evacuation routes, and maintaining the structural integrity of buildings in case of emergencies. We offer expert installation of high-quality fire doors that comply with the latest safety standards while seamlessly integrating with your interior design.</p>
+    <p> Beyond installation, we provide regular inspections and maintenance to ensure your fire doors remain fully operational and meet legal requirements. Our services extend to emergency repairs, ensuring that any damage to your fire doors is quickly addressed to maintain maximum protection. Whether you're safeguarding your home or securing your business, our fire door solutions deliver peace of mind and long-lasting protection.</p>
+</div>

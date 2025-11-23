@@ -1,0 +1,123 @@
+/* ===== Modern Service Section (Bootstrap-friendly) ===== */
+.modern-service {
+  /* Typography tweaks */
+  h2,
+  h3 {
+    letter-spacing: 0.2px;
+  }
+  p {
+    color: #2d2d2d;
+  }
+
+  /* Header benefits chips */
+  .benefit-chips {
+    .chip {
+      background: #06344c;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: 0 6px 14px rgba(6, 52, 76, 0.15);
+    }
+  }
+
+  /* Media card */
+  .media-card {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .media-badge {
+      position: absolute;
+      left: 0.75rem;
+      bottom: 0.75rem;
+      background: #ffc107;
+      color: #1b1b1b;
+      font-weight: 700;
+      padding: 0.35rem 0.6rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      font-size: 0.85rem;
+    }
+  }
+
+  /* Checklist */
+  .checklist {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      margin: 0.4rem 0;
+
+      i {
+        color: #0b6a8a;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+
+  /* Technique cards */
+  .feature-card {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 0.9rem;
+    padding: 0.85rem 0.9rem;
+    box-shadow: 0 6px 16px rgba(6, 52, 76, 0.06);
+
+    .icon-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #06344c;
+      color: #fff;
+      flex: 0 0 40px;
+    }
+  }
+
+  /* CTA card */
+  .cta-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #f8fbfd;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    .mini-badge {
+      display: inline-block;
+      background: #06344c;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 0.4rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .cta-side {
+      background-image: url("https://images.unsplash.com/photo-1585128792020-803d29415281?q=80&w=1200&auto=format&fit=crop");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  /* Small responsive polish */
+  @media (max-width: 576px) {
+    .media-card img {
+      border-radius: 0.85rem;
+    }
+    .feature-card {
+      padding: 0.75rem 0.8rem;
+    }
+  }
+}

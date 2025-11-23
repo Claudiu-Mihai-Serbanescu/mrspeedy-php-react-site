@@ -1,0 +1,282 @@
+/* === Componente reutilizabile (services cards) === */
+service-item {
+  margin-top: 20px;
+} /* dacă e custom element */
+
+.service-item {
+  margin-top: 20px;
+}
+.service-item p {
+  font-weight: bold;
+}
+
+.service-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #fed136;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .service-item {
+    margin-bottom: 30px;
+  }
+}
+
+/* ===== Benefits / info cards / products ===== */
+
+/* Benefits list */
+.benefit-row {
+  border: 1px solid #c4c4c4;
+  border-collapse: collapse;
+}
+.benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+}
+.benefit-icon {
+  width: 50px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.benefit-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Info box (dark overlay) */
+.info-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+.info-box-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.info-box-content p {
+  margin: 0;
+}
+
+/* Products grid/cards */
+.products-section {
+  padding: 40px 0;
+  background: #f0f4f7;
+}
+.product-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.product-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.product-title {
+  font-weight: 700;
+  margin-top: 15px;
+}
+.product-subtitle {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .product-item {
+    margin-bottom: 30px;
+  }
+}
+/* =========================
+   Cards
+   ========================= */
+
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: 0.375rem;
+  --bs-card-inner-border-radius: calc(0.375rem - 1px);
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-bg: #fff;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  word-wrap: break-word;
+  background-color: #fafafa;
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  > .list-group {
+    border-top: inherit;
+    border-bottom: inherit;
+  }
+  > .list-group:first-child {
+    border-top-width: 0;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+  }
+  > .list-group:last-child {
+    border-bottom-width: 0;
+    border-bottom-right-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  }
+  > .card-header + .list-group,
+  > .list-group + .card-footer {
+    border-top: 0;
+  }
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+}
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+}
+.card-subtitle {
+  margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
+  margin-bottom: 0;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+}
+.card-link + .card-link {
+  margin-left: var(--bs-card-spacer-x);
+}
+
+.card-header {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  margin-bottom: 0;
+  color: var(--bs-card-cap-color);
+  background-color: var(--bs-card-cap-bg);
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+
+  &:first-child {
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+  }
+}
+
+.card-footer {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  color: var(--bs-card-cap-color);
+  background-color: var(--bs-card-cap-bg);
+  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+
+  &:last-child {
+    border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+  }
+}
+
+.card-header-tabs {
+  margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
+  margin-bottom: calc(-1 * var(--bs-card-cap-padding-y));
+  margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
+  border-bottom: 0;
+
+  .nav-link.active {
+    background-color: var(--bs-card-bg);
+    border-bottom-color: var(--bs-card-bg);
+  }
+}
+
+.card-header-pills {
+  margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
+  margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
+}
+
+.card-img-overlay {
+  position: absolute;
+  inset: 0;
+  padding: var(--bs-card-img-overlay-padding);
+  border-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+}
+
+/* groups */
+.card-group > .card {
+  margin-bottom: var(--bs-card-group-margin);
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+
+    > .card {
+      flex: 1 0 0%;
+      margin-bottom: 0;
+    }
+    > .card + .card {
+      margin-left: 0;
+      border-left: 0;
+    }
+
+    > .card:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      .card-img-top,
+      .card-header {
+        border-top-right-radius: 0;
+      }
+      .card-img-bottom,
+      .card-footer {
+        border-bottom-right-radius: 0;
+      }
+    }
+    > .card:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      .card-img-top,
+      .card-header {
+        border-top-left-radius: 0;
+      }
+      .card-img-bottom,
+      .card-footer {
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
